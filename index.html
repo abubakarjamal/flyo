@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  body{
+    
+    font-size:16px;
+    background-color:hsl(218, 28%, 13%);
+    color:white;
+  }
+  footer{
+    background-color:hsl(216, 53%, 9%);
+  }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="">
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+    <div class="w3-bar">
+      <img class="w3-bar-item" src="logo.svg" alt="" />
+  <a class="w3-bar-item w3-right w3-button w3-hide-small" href="">Features</a>
+  <a class="w3-bar-item w3-right w3-button w3-hide-small" href="#">Team</a>
+ <a class="w3-bar-item w3-right w3-button w3-hide-small" href="">Sign In</a>
+ <a onclick="w3_open()" class="w3-bar-item w3-button w3-ripple w3-right w3-padding w3-hide-large w3-hide-medium" href="#"><I class="fa fa-bars"></i></a>
+</div>
+
+<div class="w3-center" style="padding: 40px;">
+  
+    <img class="" src="illustration-intro.png" alt="" width="50%"/>
+ 
+    <p class="w3-xxlarge w3-center"><strong>All your files in one secure location, <br> accessible anywhere.</strong></p>
+  <p class="">  Fylo stores all your most important files in one <br>secure location. Access them wherever 
+  you need,share and collaborate <br>with friends family, and co-workers.</p>
+  <button class="w3-cyan w3-border-grey w3-round-xlarge w3-ripple w3-text-white w3-large" type="submit" style="width:40%;">Get Started</button>
+</div>
+  <div class="w3-center w3-row" style="padding: 40px;">
+    <div class="w3-half">
+      <img class="" src="icon-access-anywhere.svg" alt="" />
+      <p><strong>Access your files, anywhere</strong></p>
+      <p>
+  The ability to use a smartphone, tablet, <br>or computer to access your account means <br>your 
+  files follow you everywhere.</p>
+    </div>
+    <div class="w3-half">
+       <img class="" src="icon-security.svg" alt="" />
+      <p><strong>Security you can trust</strong></p>
+      <p>
+   2-factor authentication and user-controlled  <br>encryption are just a couple of the security 
+ <br> features we allow to help secure your files.</p>
+    </div>
+      
+      
+    </div>
+    <div class="w3-center w3-row" style="padding: 40px;">
+    <div class="w3-half">
+       <img class="" src="icon-collaboration.svg" alt="" />
+      <p><strong>Real-time collaboration</strong></p>
+      <p>
+  Securely share files and folders with friends, <br> family and colleagues for live collaboration. <br>
+  No email attachments required.</p>
+    </div>
+  
+    <div class="w3-half">
+       <img class="" src="icon-any-file.svg" alt="" />
+      <p><strong>Store any type of file</strong></p>
+      <p>
+  Whether you're sharing holidays photos or <br> work documents, Fylo has you covered allowing for all 
+  file types to be <br>securely stored and shared.</p>
+    </div>
+      
+    </div>
+    
+  </div>
+<div class="w3-row" style="padding:40px;">
+  <div class="w3-half">
+    <img class="" src="illustration-stay-productive.png" alt="" width="100%" />
+  </div>
+  <div class="w3-half">
+    <p class="w3-xxlarge w3-center"><strong>Stay productive, wherever you are.</strong></p>
+    <p>  Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+  storage needs.
+<br>
+
+  Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+  attachments required.</p>
+  <br>
+  <a href="" style="color:hsl(176, 68%, 64%);"><u>See how Fylo works <img src="icon-arrow.svg" alt="" />  </u></a>
+  </div>
+</div>
+ <img class="w3-padding " src="bg-quotes.png" alt="" />
+<div class="w3-row-padding w3-panel" style=" margin:20px; padding:20px;">
+ 
+  <div class="w3-third w3-panel w3-card-4" style="background-color:hsl(219, 30%, 18%); padding:10px;">
+    <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
+
+    <img class="w3-border w3-round-xxlarge" src="profile-1.jpg" alt="" width="20%"/>
+ 
+     <p><strong> Satish Patel</strong><br> Founder & CEO, Huddle</p>
+  </div>
+ 
+  
+  <div class="w3-third w3-panel w3-card" style="background-color:hsl(219, 30%, 18%); padding:10px;">
+    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
+ 
+   <img class="w3-border w3-round-xxlarge" src="profile-2.jpg" alt="" width="20%"/>   <p><strong> Bruce McKenzie</strong><br> Founder & CEO, Huddle</p>
+ 
+  </div>
+  <div class="w3-third w3-panel w3-card" style="background-color:hsl(219, 30%, 18%); padding:10px;">
+     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
+ 
+   <img class="w3-border w3-round-xxlarge" src="profile-3.jpg" alt="" width="20%"/>  <p><strong> Iva Boyd</strong><br> Founder & CEO, Huddle</p>
+
+  </div>
+  </div>
+  <div class="w3-hide-small" style="padding:2px 180px 2px 180px;">
+  <div class="w3-card-4 w3-container w3-center" style="background-color:hsl(217, 28%, 15%); wid%" >
+    <h3><strong>Get early access today</strong></h3>
+    <p>  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+  questions, our support team would be happy to help you.</p>
+    <input class="w3-round-xlarge"type="search" name="" id="er" value="email" /> <button type="submit" style="background-color:hsl(176, 68%, 64%); color:white; border-radius:12px 12px; padding:px">Get Started For Free</button>
+  </div>
+</div>
+<div class="w3-hide-large w3-hide-medium " style="padding:2px 30px 2px 30px;">
+  <div class="w3-card-4 w3-container w3-center" style="background-color:hsl(217, 28%, 15%); wid%" >
+    <h3><strong>Get early access today</strong></h3>
+    <p>  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+  questions, our support team would be happy to help you.</p>
+  <form method="Get">
+    <input class="w3-round-xlarge"type="email" name="email" id="er" value="" /> <button class="w3-ripple" type="submit" style="background-color:hsl(176, 68%, 64%); color:white; border-radius:12px 12px; padding:px">Get Started For Free</button>
+    </form>
+  </div>
+</div>
+
+
+
+  <footer>
+    <div class="w3-row" style="padding:20px;">
+     <div class="w3-quarter">
+       <img src="logo.svg" alt="" />
+       <p class="w3-text-white"><i class="fas fa-map-marker-alt"></i> <span style="padding:1px 0 0 30px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+  dolore magna aliqua</span></p>
+  <p><img class="" src="icon-phone.svg" alt="" />   <span style="padding:1px 0 0 30px;">+1-543-123-4567</span></p>
+   <p ><img class="" src="icon-email.svg" alt="" /> <span style="padding:1px 0 0 30px;">example@fylo.com</span></p>
+     </div> 
+  
+     <div class="w3-quarter w3-bar-block" style="padding: 1px 0 0 30px">
+       <p class=" w3-bar-item">About us</p>
+       <p class=" w3-bar-item">Jobs</p>
+       <p class=" w3-bar-item">Press</p>
+        <p class=" w3-bar-item">Blog</p>
+     </div>
+        <div class="w3-quarter w3-bar-block" style="padding: 1px 0 0 30px">
+       
+       <p class=" w3-bar-item w3-text-sand w3-hover-text-white">Contact Us</p>
+       <p class=" w3-bar-item">Terms</p>
+        <p class=" w3-bar-item">Privacy</p>
+       <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+     </div>
+     <div class="w3-quarter w3-padding w3-bar">
+        <img class="w3-bar-item w3-border-xlarge" src="icon-facebook.svg" alt="" width="100%" style="padding:10px;border-radius:20px 20px 20px 20px; border: solid white 1px" /><br>
+         <img class="w3-bar-item w3-button" src="icon-twitter.svg" alt="" style="padding:10px;border-radius:20px 20px 20px 20px; border: solid white 1px" />
+       <br> <img class="w3-bar-item w3-button" src="icon-instagram.svg" alt="" style="padding:10px;border-radius:20px 20px 20px 20px; border: solid white 1px"  />
+     </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">jamal</a>.
+    </p>
+  </footer>
+  </div>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' type="text/javascript" charset="utf-8">
+   
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  </script>
+</body>
+</html>
